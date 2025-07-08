@@ -18,7 +18,27 @@
             });
 
             //면역과 의학적 암 예방 까지
+            let wid = $(".main").width();
+            let list = 0; 
+            let count = $(".ma_back>li").length; 
+
+            $(".next").click(function(){
+                if(list == count-1){
+                    list = 0;
+                }else{
+                    list++;
+                }
+                $(".ma_back").stop().animate({"margin-left":-wid * list});
+            });
             
+            $(".prev").click(function(){
+                if(list == 0){
+                    list = count - 1;
+                }else{
+                    list--;
+                }
+                $(".ma_back").stop().animate({"margin-left":-wid * list});
+            });
         });
     </script>
 </head>
@@ -91,24 +111,47 @@
         <!-- 면역과 의학적 암 예방 까지 -->
         <div class="main">
             <ul class="ma_back">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <p>03</p>
-            <div class="with">
-                <div class="love">
-                    <p class="l_button">사랑의병원</p>
-                </div>
-                <p><span>면역과 의학적 암 예방</span>까지<br>협진시스템을 운영하고 있습니다.</p>
-                <p>
-                    사랑의병원은 전문 의료진과 첨단 의료장비를 기반으로 협진 시스템을 운영<br>
-                    질병예방과 재발방지 등 진단항복 중심의 건강검진 프로그램을 운영하고 있습니다.
-                </p>
-                <p class="more"><span>자세히 보기</span></p>
-            </div>   
+                <li>
+                    <ul>
+                        <li>01 <span>이롬</span></li>
+                        <li>먹거리에서 생활습관까지<br><span>건강한 개인과 사회에 기여하겠습니다.</span></li>
+                        <li>이롬은 지나칠 수 있는 자연에서 인간에게 유익한 힘을 발견하는 지혜,<br>과학의 힘으로 자연을 담아 건강에 대한 새로운 해답을 제공해 나가겠습니다.</li>
+                        <li class="more"><span>자세히 보기</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>02 <span>이롬 헬스케어</span></li>
+                        <li>삶의 가치를 전달할 수 있도록<br><span>건강 라이프 스타일을 연구</span>합니다.</li>
+                        <li>이롬헬스케어는 고객의 삶 속에 깊이 들어가 먹을거리를 시작으로<br>생활전반의 라이프 스타일을 제공하여, 행복하고 건강한 삶을 선물하고 있습니다.</li>
+                        <li class="more"><span>자세히 보기</span></li>
+                    </ul>                    
+                </li>
+                <li>
+                    <ul>
+                        <li>03 <span>사랑의병원</span></li>
+                        <li><span>면역과 의학적 암 예방 까지</span><br>협진시스템을 운영하고 있습니다.</li>
+                        <li>사랑의병원은 전문 의료진과 첨단 의료장비를 기반으로 협진 시스템을 운영<br>질병예방과 재발방지 등 진단항복 중심의 건강검진 프로그램을 운영하고 있습니다.</li>
+                        <li class="more"><span>자세히 보기</span></li>
+                    </ul>                    
+                </li>
+                <li>
+                    <ul>
+                        <li>04 <span>국제사랑의봉사단</span></li>
+                        <li><span>'세계는 나의 교실', '최후의 혁명은 사랑'</span><br>고통받는 이웃들을 섬기고 있습니다.</li>
+                        <li>국제사랑의봉사단은 전 세계의 고통받는 이웃들을 사랑으로 섬기고<br>전인적 필요를 채워 주고자 전 세계 40여개국에서 활동하고 있습니다.</li>
+                        <li class="more"><span>자세히 보기</span></li>
+                    </ul>                    
+                </li>
+                <li>
+                    <ul>
+                        <li>05 <span>꿈의학교</span></li>
+                        <li><span>"집을 팔아서 스승을 사라"</span><br>아이들의 더 큰 미래를 생각합니다.</li>
+                        <li>꿈의학교에서는 우리 아이들이 올바른 세계관과 비전, 실력을 겸비하여<br>언제 어디서나 마음껏 꿈을 펼치고 성장할 수 있도록 사랑으로 양육하고 있습니다.</li>
+                        <li class="more"><span>자세히 보기</span></li>
+                    </ul>                    
+                </li>
+            </ul> 
             <div class="se_box">
                 <div class="se_number">
                     <div class="prev"><img src="images/visual_prev.png" alt=""></div>
@@ -121,7 +164,7 @@
                                 <li>04</li>
                             </ul>
                         </li>
-                        <li></li>
+                        <li>｜</li>
                         <li>05</li>
                     </ul>
                     <div class="next"><img src="images/visual_next.png" alt=""></div>
