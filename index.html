@@ -39,6 +39,11 @@
                 }
                 $(".ma_back").stop().animate({"margin-left":-wid * list});
             });
+
+            //TOP 버튼
+            $(".TOP_button").click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+            });
         });
     </script>
 </head>

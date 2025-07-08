@@ -435,6 +435,7 @@ img{border: 0;vertical-align: top;}
     width: 90px; height: 90px;
     background-color: rgb(15, 97, 66);
     animation: round 1.5s infinite;
+    cursor: pointer;
 }
 @keyframes round {
     0%{
