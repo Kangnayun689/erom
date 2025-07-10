@@ -30,6 +30,7 @@ img{border: 0;vertical-align: top;}
     font-size: 13px;
     z-index: 100;
     line-height: 30px;
+    display: none;
 }
 #header .er_header .group>li .sub li{
     margin-left: 30px;
@@ -231,7 +232,7 @@ img{border: 0;vertical-align: top;}
     background-color: rgb(98, 212, 123);
     border-radius: 100px;
     position: absolute; bottom: 0;
-    top: 1160px; left: 520px;
+    top: 1010px; left: 515px;
 }
 #section .em_back :nth-child(3){
     font-size: 18px;
@@ -340,7 +341,7 @@ img{border: 0;vertical-align: top;}
     border-radius: 50px;
     background-color: rgb(166, 226, 109);
     position: absolute; bottom: 0;
-    top: 2320px; left: 160px;
+    top: 2170px; left: 160px;
 }
 
 
